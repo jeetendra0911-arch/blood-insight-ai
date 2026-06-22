@@ -6,7 +6,12 @@ from fastapi.staticfiles import StaticFiles
 from app.core.config import settings
 from app.routes import auth, reports
 
-# Ensure upload directory exists
+from app.core.database import Base, engine
+from app import models
+
+# Ensure database tables exist
+Base.metadata.create_all(bind=engine)
+
 os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
 
 app = FastAPI(
