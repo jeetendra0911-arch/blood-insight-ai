@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- DNA Rungs (Connecting base pairs) -->
+  <g stroke="#CBD5E1" stroke-width="20" stroke-linecap="round">
+    <line x1="160" y1="64" x2="352" y2="64"/>
+    <line x1="185" y1="128" x2="327" y2="128"/>
+    <line x1="224" y1="192" x2="288" y2="192"/>
+    <line x1="352" y1="256" x2="160" y2="256"/>
+    <line x1="288" y1="320" x2="224" y2="320"/>
+    <line x1="327" y1="384" x2="185" y2="384"/>
+    <line x1="160" y1="448" x2="352" y2="448"/>
+  </g>
+
+  <!-- DNA Left Strand (Medical Blue) -->
+  <path d="M 160 64 C 160 160, 352 160, 352 256 C 352 352, 160 352, 160 448" 
+        fill="none" stroke="#2563EB" stroke-width="40" stroke-linecap="round"/>
+
+  <!-- DNA Right Strand (Accent Red) -->
+  <path d="M 352 64 C 352 160, 160 160, 160 256 C 160 352, 352 352, 352 448" 
+        fill="none" stroke="#DC2626" stroke-width="40" stroke-linecap="round"/>
+
+  <!-- Endpoint Node Caps -->
+  <circle cx="160" cy="64" r="24" fill="#2563EB"/>
+  <circle cx="160" cy="448" r="24" fill="#2563EB"/>
+  <circle cx="352" cy="64" r="24" fill="#DC2626"/>
+  <circle cx="352" cy="448" r="24" fill="#DC2626"/>
+</svg>
